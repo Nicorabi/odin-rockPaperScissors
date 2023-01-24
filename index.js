@@ -42,3 +42,9 @@ for (let i = 0; i < 5; i++) {
     console.log("your score = " + userScore);
     console.log("Computer's score = " + computerScore);
 }
+
+if (userScore > computerScore) {
+    console.log("Player wins");
+} else {
+    console.log("Computer wins");
+}
