@@ -1,26 +1,27 @@
 function playRound() {
     let playerChoices = prompt("Rock, Paper or Scissor? ");
+    let result = playerChoices.toUpperCase();
     let choices = ["Rock", "Paper", "Scissor"];
     let choice = choices[Math.floor(Math.random()*choices.length)];
     console.log("The computer chose: " + choice);
     
-    if (playerChoices === "Rock" && choice === "Rock") {
+    if (result === "Rock".toUpperCase() && choice === "Rock") {
         console.log("Draw!");
-    } else if (playerChoices === "Rock" && choice === "Scissor") {
+    } else if (result === "Rock".toUpperCase() && choice === "Scissor") {
         console.log("Player wins!");
-    } else if (playerChoices === "Rock" && choice === "Paper") {
+    } else if (result === "Rock".toUpperCase() && choice === "Paper") {
         console.log("Computer wins!");
-    } else if (playerChoices === "Paper" && choice === "Paper") {
+    } else if (result === "Paper".toUpperCase() && choice === "Paper") {
         console.log("Draw!");
-    } else if (playerChoices === "Paper" && choice === "Rock") {
+    } else if (result === "Paper".toUpperCase() && choice === "Rock") {
         console.log("Player wins!");
-    } else if (playerChoices === "Paper" && choice === "Scissor") {
+    } else if (result === "Paper".toUpperCase() && choice === "Scissor") {
         console.log("Computer wins!");
-    } else if (playerChoices === "Scissor" && choice === "Scissor") {
+    } else if (result === "Scissor".toUpperCase() && choice === "Scissor") {
         console.log("Draw!");
-    } else if (playerChoices === "Scissor" && choice === "Rock") {
+    } else if (result === "Scissor".toUpperCase() && choice === "Rock") {
         console.log("Computer wins!");
-    } else if (playerChoices === "Scissor" && choice === "Paper") {
+    } else if (result === "Scissor".toUpperCase() && choice === "Paper") {
         console.log("Player wins!");
     } else {
         console.log("Invalid input by player, try again.");
