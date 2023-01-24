@@ -27,10 +27,7 @@ function playRound() {
         console.log("Invalid input by player, try again.");
     }
 }
-playRound();
 
-function game() {
-    for (let i = 0; i < 5; i++) {
-        
-    }
+for (let i = 0; i < 5; i++) {
+    playRound();
 }
