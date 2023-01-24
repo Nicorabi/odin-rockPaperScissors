@@ -39,14 +39,14 @@ let computerScore = parseInt(0);
 
 for (let i = 0; i < 5; i++) {
     playRound();
-    console.log("your score = " + userScore);
+    console.log("Your score = " + userScore);
     console.log("Computer's score = " + computerScore);
 }
 
 if (userScore > computerScore) {
-    console.log("Player wins");
+    console.log("Player wins!");
 } else if (userScore < computerScore) {
-    console.log("Computer wins");
+    console.log("Computer wins!");
 } else {
-    console.log("It's a tie or n/a");
+    console.log("It's a tie or n/a.");
 }
