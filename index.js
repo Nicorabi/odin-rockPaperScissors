@@ -6,28 +6,39 @@ function playRound() {
     console.log("The computer chose: " + choice);
     
     if (result === "Rock".toUpperCase() && choice === "Rock") {
-        console.log("Draw!");
+        console.log("It's a tie!");
     } else if (result === "Rock".toUpperCase() && choice === "Scissor") {
-        console.log("Player wins!");
+        userScore++;
+        console.log("You win!");
     } else if (result === "Rock".toUpperCase() && choice === "Paper") {
-        console.log("Computer wins!");
+        computerScore++;
+        console.log("You lose!");
     } else if (result === "Paper".toUpperCase() && choice === "Paper") {
-        console.log("Draw!");
+        console.log("It's a tie!");
     } else if (result === "Paper".toUpperCase() && choice === "Rock") {
-        console.log("Player wins!");
+        userScore++;
+        console.log("You win!");
     } else if (result === "Paper".toUpperCase() && choice === "Scissor") {
-        console.log("Computer wins!");
+        computerScore++;
+        console.log("You lose!");
     } else if (result === "Scissor".toUpperCase() && choice === "Scissor") {
-        console.log("Draw!");
+        console.log("It's a tie!");
     } else if (result === "Scissor".toUpperCase() && choice === "Rock") {
-        console.log("Computer wins!");
+        computerScore++;
+        console.log("You lose!");
     } else if (result === "Scissor".toUpperCase() && choice === "Paper") {
-        console.log("Player wins!");
+        userScore++;
+        console.log("You win!");
     } else {
         console.log("Invalid input by player, try again.");
     }
 }
 
+let userScore = parseInt(0);
+let computerScore = parseInt(0);
+
 for (let i = 0; i < 5; i++) {
     playRound();
+    console.log("your score = " + userScore);
+    console.log("Computer's score = " + computerScore);
 }
