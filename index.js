@@ -1,4 +1,4 @@
-function playRound(playerSelection, computerSelection) {
+function playRound() {
     let playerChoices = prompt("Rock, Paper or Scissor? ");
     let choices = ["Rock", "Paper", "Scissor"];
     let choice = choices[Math.floor(Math.random()*choices.length)];
@@ -9,17 +9,17 @@ function playRound(playerSelection, computerSelection) {
     } else if (playerChoices === "Rock" && choice === "Scissor") {
         console.log("Player wins!");
     } else if (playerChoices === "Rock" && choice === "Paper") {
-        console.log("Player loses!");
+        console.log("Computer wins!");
     } else if (playerChoices === "Paper" && choice === "Paper") {
         console.log("Draw!");
     } else if (playerChoices === "Paper" && choice === "Rock") {
         console.log("Player wins!");
     } else if (playerChoices === "Paper" && choice === "Scissor") {
-        console.log("Player loses!");
+        console.log("Computer wins!");
     } else if (playerChoices === "Scissor" && choice === "Scissor") {
         console.log("Draw!");
     } else if (playerChoices === "Scissor" && choice === "Rock") {
-        console.log("Player loses!");
+        console.log("Computer wins!");
     } else if (playerChoices === "Scissor" && choice === "Paper") {
         console.log("Player wins!");
     } else {
