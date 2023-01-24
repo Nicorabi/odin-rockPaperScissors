@@ -45,6 +45,8 @@ for (let i = 0; i < 5; i++) {
 
 if (userScore > computerScore) {
     console.log("Player wins");
-} else {
+} else if (userScore < computerScore) {
     console.log("Computer wins");
+} else {
+    console.log("It's a tie or n/a");
 }
