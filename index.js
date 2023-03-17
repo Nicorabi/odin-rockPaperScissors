@@ -2,9 +2,9 @@ function playRound() {
     let playerChoices = prompt("Rock, Paper or Scissor? ");
     let result = playerChoices.toUpperCase();
     let choices = ["Rock", "Paper", "Scissor"];
-    let choice = choices[Math.floor(Math.random()*choices.length)];
+    let choice = choices[Math.floor(Math.random() * choices.length)];
     console.log("The computer chose: " + choice);
-    
+
     if (result === "Rock".toUpperCase() && choice === "Rock") {
         console.log("It's a tie!");
     } else if (result === "Rock".toUpperCase() && choice === "Scissor") {
@@ -37,11 +37,11 @@ function playRound() {
 let userScore = parseInt(0);
 let computerScore = parseInt(0);
 
-for (let i = 0; i < 5; i++) {
-    playRound();
-    console.log("Your score = " + userScore);
-    console.log("Computer's score = " + computerScore);
-}
+
+playRound();
+console.log("Your score = " + userScore);
+console.log("Computer's score = " + computerScore);
+
 
 if (userScore > computerScore) {
     console.log("Player wins!");
