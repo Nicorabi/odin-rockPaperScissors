@@ -37,16 +37,4 @@ function playRound() {
 let userScore = parseInt(0);
 let computerScore = parseInt(0);
 
-
 playRound();
-console.log("Your score = " + userScore);
-console.log("Computer's score = " + computerScore);
-
-
-if (userScore > computerScore) {
-    console.log("Player wins!");
-} else if (userScore < computerScore) {
-    console.log("Computer wins!");
-} else {
-    console.log("It's a tie or n/a.");
-}
