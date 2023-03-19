@@ -70,7 +70,6 @@ function playRound(playerSelection, computerSelection) {
         userScore += 1;
         return 'You win!';
     }
-    return 'Invalid input by player, try again.';
 }
 
 function checkGameEnd() {
@@ -102,8 +101,6 @@ function game() {
         return 'Player wins!';
     } else if (userScore < computerScore) {
         return 'Computer wins!';
-    } else {
-        return "It's a tie!";
     }
 }
 
