@@ -95,7 +95,6 @@ function checkGameEnd() {
     }
 }
 
-
 function game() {
     if (userScore > computerScore) {
         return 'Player wins!';
